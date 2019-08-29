@@ -6,7 +6,7 @@ var width = document.querySelector("#inputWidth").value;
 
 makeGrid(height, width);
 
-sizePicker.addEventListener("click", (event) => {
+sizePicker.addEventListener("submit", (event) => {
 
   event.preventDefault();
 
