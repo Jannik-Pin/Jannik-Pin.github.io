@@ -1,59 +1,31 @@
-var sizePicker = document.querySelector("#sizePicker");
+let color = document.getElementById("colorPicker");
+let table = document.getElementById("pixelCanvas");
+let sizePicker = document.getElementById("sizePicker");
+let height = document.getElementById("inputHeight").value;
+let width = document.getElementById("inputWidth").value;
+makeGrid(height, width);
 
-var h = document.querySelector('#inputHeight').value;
+sizePicker.addEventListener("click", (e) => {
 
-var w = document.querySelector('#inputWidth').value;
+  e.preventDefault();
 
-var canvas = document.querySelector('#pixelCanvas');
+  let height = document.getElementById("inputHeight").value;
+  let width = document.getElementById("inputWidth").value;
+  table.firstElementChild.remove();
 
-var color = document.querySelector('#colorPicker');
-
-makeGrid(h, w);
-
-sizePicker.addEventListener("click", function(e){
-
-e.preventDefault();
-
-let h = document.getElementById('inputHeight').value;
-
-let w = document.getElementById('inputWeight').value;
-
-clearCanvas();
-
-makeGrid(h, w);
+  makeGrid(height, width);
 
 });
 
-function fillCell() {
+function makeGrid(height, width) {
 
-cell.style.backgroundColor = color.value;
-
-};
-
-function makeGrid(h, w) {
-
-for (var r = 1; r <= h; r++) {
-
-let row = canvas.insertRow(r);
-
-for (var c = 1; c <= w; c++) {
-
-let cell = row.insertCell(c);
-
-cell.addEventListener('click', fillCell);
-
+for (let r = 0; r < height; r++) {
+    let row = table.insertRow(r);
+    for (let c = 0; c < width; c++) {
+      let cell = row.insertCell(c);
+      cell.addEventListener("click", (e) => {
+        cell.style.backgroundColor = color.value;
+      })
+    }
+  }
 }
-
-}
-
-};
-
-function clearCanvas() {
-
-while (canvas.rows.length > 0) {
-
-canvas.firstElementChild.remove();
-
-};
-
-};
