@@ -1,3 +1,5 @@
+// Select color input
+// Select size input
 let color = document.getElementById("colorPicker");
 let table = document.getElementById("pixelCanvas");
 let sizePicker = document.getElementById("sizePicker");
