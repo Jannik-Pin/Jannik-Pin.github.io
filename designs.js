@@ -10,8 +10,9 @@ sizePicker.addEventListener("click", (event) => {
 
   event.preventDefault();
 
-  let height = document.getElementById("inputHeight").value;
-  let width = document.getElementById("inputWidth").value;
+  height;
+  width;
+  
   table.firstElementChild.remove();
 
   makeGrid(height, width);
