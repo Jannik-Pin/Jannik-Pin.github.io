@@ -1,5 +1,5 @@
 var sizePicker = document.querySelector(#sizePicker);
-var field = document.querySelector(#pixelCanvas);
+var table = document.querySelector(#pixelCanvas);
 var color = document.querySelector(#colorPicker);
 var height = document.querySelector(#inputHeight).value;
 let width = document.querySelector(#inputWidth).value;
