@@ -1,8 +1,8 @@
-var sizePicker = document.querySelector(#sizePicker);
-var table = document.querySelector(#pixelCanvas);
-var color = document.querySelector(#colorPicker);
-var height = document.querySelector(#inputHeight).value;
-var width = document.querySelector(#inputWidth).value;
+var sizePicker = document.querySelector("#sizePicker");
+var table = document.querySelector("#pixelCanvas");
+var color = document.querySelector("#colorPicker");
+var height = document.querySelector("#inputHeight").value;
+var width = document.querySelector("#inputWidth").value;
 
 makeGrid(height, width);
 
