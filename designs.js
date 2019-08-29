@@ -10,8 +10,8 @@ sizePicker.addEventListener("click", (event) => {
 
   event.preventDefault();
 
-  let height = document.getElementById("input.height").value;
-  let width = document.getElementById("input.width").value;
+  let height = document.getElementById("input.Height").value;
+  let width = document.getElementById("input.Width").value;
  
   canvas.firstElementChild.remove();
 
