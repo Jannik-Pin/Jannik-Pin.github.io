@@ -1,3 +1,5 @@
+//var definitions
+
 var sizePicker = document.querySelector("#sizePicker");
 var table = document.querySelector("#pixelCanvas");
 var color = document.querySelector("#colorPicker");
@@ -5,6 +7,8 @@ var height = document.querySelector("#inputHeight").value;
 var width = document.querySelector("#inputWidth").value;
 
 makeGrid(height, width);
+
+//event listener when submit button is pressed, then convert the input values from height and width for the upcoming grid drawing. 
 
 sizePicker.addEventListener("submit", (event) => {
 
